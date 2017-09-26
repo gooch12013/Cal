@@ -135,7 +135,7 @@ def cal1 ():
 def about1():
 
         tkMessageBox.showinfo('About',
-                              'Hello \nSoftware Version is 1.0  \nIf you have any questions please contact me at \n'
+                              'Hello \nSoftware Version is 1.0 Python 2.7  \nIf you have any questions please contact me at \n'
                               'Dgooch@chauvetlighting.com ' )
 
 #********END Def's **********
