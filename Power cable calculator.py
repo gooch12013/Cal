@@ -1,10 +1,6 @@
 from Tkinter import *
 import tkMessageBox
-import serial
 import ttk
-import time
-import math
-from PIL import Image, ImageTk
 import math
 #******** Def's **********
 
