@@ -1,7 +1,8 @@
-#python 2.7
-from Tkinter import *
-import ttk
-import tkMessageBox
+#V2.0 Python 3.11 
+from tkinter import *
+from tkinter import ttk
+from tkinter.messagebox import showinfo 
+
 
 
 #******** Main Config **********
@@ -23,9 +24,9 @@ PF_pg3 = StringVar()
 watts_pg3 = StringVar()
 
 def about1():
-    tkMessageBox.showinfo('About',
-                          'Hello \nSoftware Version is 1.0 Python 2.7  \nIf you have any questions please contact me at \n'
-                          'Dgooch@chauvetlighting.com ')
+    showinfo('About',
+        'Hello \nSoftware Version is 1.0 Python 2.7  \nIf you have any questions please contact me at \n'
+        'Dgooch@chauvetlighting.com ')
 
 #******** Menu Config **********
 subMenu = Menu(menu)
@@ -45,116 +46,116 @@ def cal1 ():
     d = di.get()
     val1 = (float (d) * float(d) * 3.14 / 4)
     val2 = (float (s) * val1 )
-    print val2
-    print val1
-    print "val2 Val is %s" %val2
+    print (val2)
+    print (val1)
+    print ("val2 Val is %s" %val2)
     Arealable = Label(page1, text="Approximate diameter of %s of strands:" %s) .grid(row=3,columnspan=2, )
     Arealable2 = Label(page1, text= val2).grid(row=3, column=3, )
    # Arealable3  =  Label(Main, text= "0000 (4/0)").grid(row=, column=3,)
     if float(val2) >= 107:
-        print "0000 (4/0)"
+        print ("0000 (4/0)")
         Arealable3 = Label(page1, text="0000 (4/0)").grid(row=4, column=1, )
     elif float(val2) >= 85.0 and (val2) < 107:
-        print "000 (3/0)"
+        print ("000 (3/0)")
         Arealable3 = Label(page1, text="000 (3/0)").grid(row=4, column=1, )
     elif float(val2) >= 67.4 and (val2) < 85.0:
-        print "00 (2/0)"
+        print ("00 (2/0)")
         Arealable3 = Label(page1, text="00 (2/0").grid(row=4, column=1, )
     elif float(val2) >= 53.5 and (val2) < 67.4:
-        print "0 (1/0)"
+        print ("0 (1/0)")
         Arealable3 = Label(page1, text="0 (1/0)").grid(row=4, column=1, )
     elif float(val2) >= 42.4 and (val2) < 53.5:
-        print "1 AWG"
+        print ("1 AWG")
         Arealable3 = Label(page1, text="1 AWG").grid(row=4, column=1, )
     elif float(val2) >= 33.6 and (val2) < 42.4:
-        print "2 AWG"
+        print ("2 AWG")
         Arealable3 = Label(page1, text="2 AWG").grid(row=4, column=1, )
     elif float(val2) >= 26.7 and (val2) < 33.6:
-        print "3 AWG"
+        print ("3 AWG")
         Arealable3 = Label(page1, text="3 AWG").grid(row=4, column=1, )
     elif float(val2) >= 21.2 and (val2) < 26.7:
-        print "4 AWG"
+        print ("4 AWG")
         Arealable3 = Label(page1, text="4 AWG").grid(row=4, column=1, )
     elif float(val2) >= 16.8 and (val2) < 21.2:
-        print "5 AWG"
+        print ("5 AWG")
         Arealable3 = Label(page1, text="5 AWG").grid(row=4, column=1, )
     elif float(val2) >= 13.3 and (val2) < 16.8:
-        print "6 AWG"
+        print ("6 AWG")
         Arealable3 = Label(page1, text="6 AWG").grid(row=4, column=1, )
     elif float(val2) >= 10.5 and (val2) < 13.3:
-        print "7 AWG"
+        print ("7 AWG")
         Arealable3 = Label(page1, text="7 AWG").grid(row=4, column=1, )
     elif float(val2) >= 8.37 and (val2) < 10.5:
-        print "8 AWG"
+        print ("8 AWG")
         Arealable3 = Label(page1, text="8 AWG").grid(row=4, column=1, )
     elif float(val2) >= 6.63 and (val2) < 8.37:
-        print "9 AWG"
+        print ("9 AWG")
         Arealable3 = Label(page1, text="9 AWG").grid(row=4, column=1, )
     elif float(val2) >= 5.26 and (val2) < 6.63:
-        print "10 AWG"
+        print ("10 AWG")
         Arealable3 = Label(page1, text="10 AWG").grid(row=4, column=1, )
     elif float(val2) >= 4.17 and (val2) < 5.26:
-        print "11 AWG"
+        print ("11 AWG")
         Arealable3 = Label(page1, text="11 AWG").grid(row=4, column=1, )
     elif float(val2) >= 3.31 and (val2) < 4.17:
-        print "12 AWG"
+        print ("12 AWG")
         Arealable3 = Label(page1, text="12 AWG").grid(row=4, column=1, )
     elif float(val2) >= 2.62 and (val2) < 3.31:
-        print "13 AWG"
+        print ("13 AWG")
         Arealable3 = Label(page1, text="13 AWG").grid(row=4, column=1, )
     elif float(val2) >= 2.08 and (val2) < 2.62:
-        print "14 AWG"
+        print ("14 AWG")
         Arealable3 = Label(page1, text="14 AWG").grid(row=4, column=1, )
     elif float(val2) >= 1.65 and (val2) < 2.08:
-        print "15 AWG"
+        print ("15 AWG")
         Arealable3 = Label(page1, text="15 AWG").grid(row=4, column=1, )
     elif float(val2) >= 1.31 and (val2) < 1.65:
-        print "16 AWG"
+        print ("16 AWG")
         Arealable3 = Label(page1, text="16 AWG").grid(row=4, column=1, )
     elif float(val2) >= 1.04 and (val2) < 1.31:
-        print "17 AWG"
+        print ("17 AWG")
         Arealable3 = Label(page1, text="17 AWG").grid(row=4, column=1, )
     elif float(val2) >= 0.823 and (val2) < 1.04:
-        print "18 AWG"
+        print ("18 AWG")
         Arealable3 = Label(page1, text="18 AWG").grid(row=4, column=1, )
     elif float(val2) >= 0.653 and (val2) < 0.823:
-        print "19 AWG"
+        print ("19 AWG")
         Arealable3 = Label(page1, text="19 AWG").grid(row=4, column=1, )
     elif float(val2) >= 0.518 and (val2) < 0.653:
-        print "20 AWG"
+        print ("20 AWG")
         Arealable3 = Label(page1, text="20 AWG)").grid(row=4, column=1, )
     elif float(val2) >= 0.410 and (val2) < 0.518:
-        print "21 AWG"
+        print ("21 AWG")
         Arealable3 = Label(page1, text="21 AWG").grid(row=4, column=1, )
     elif float(val2) >= 0.326 and (val2) < 0.410:
-        print "22 AWG"
+        print ("22 AWG")
         Arealable3 = Label(page1, text="22 AWG").grid(row=4, column=1, )
     elif float(val2) >= 0.258 and (val2) < 0.326:
-        print "23 AWG"
+        print ("23 AWG")
         Arealable3 = Label(page1, text="23 AWG").grid(row=4, column=1, )
     elif float(val2) >= 0.205 and (val2) < 0.258:
-        print "24 AWG"
+        print ("24 AWG")
         Arealable3 = Label(page1, text="24 AWG").grid(row=4, column=1, )
     elif float(val2) >= 0.162 and (val2) < 0.205:
-        print "25 AWG"
+        print ("25 AWG")
         Arealable3 = Label(page1, text="25 AWG").grid(row=4, column=1, )
     elif float(val2) >= 0.129 and (val2) < 0.162:
-        print "26 AWG"
+        print ("26 AWG")
         Arealable3 = Label(page1, text="26 AWG").grid(row=4, column=1, )
     elif float(val2) >= 0.102 and (val2) < 0.129:
-        print "27 AWG"
+        print ("27 AWG")
         Arealable3 = Label(page1, text="27 AWG").grid(row=4, column=1, )
     elif float(val2) >= 0.0810 and (val2) < 0.102:
-        print "28 AWG"
+        print ("28 AWG")
         Arealable3 = Label(page1, text="28 AWG").grid(row=4, column=1, )
     elif float(val2) >= 0.0642 and (val2) < 0.0810:
-        print "29 AWG"
+        print ("29 AWG")
         Arealable3 = Label(page1, text="29 AWG").grid(row=4, column=1, )
     elif float(val2) >= 0.0509 and (val2) < 0.0642:
-        print "30 AWG"
+        print ("30 AWG")
         Arealable3 = Label(page1, text="30 AWG").grid(row=4, column=1, )
     else:
-        print "IDK"
+        print ("IDK")
 
 def AtoW():
     amps = amps_pg2.get()
